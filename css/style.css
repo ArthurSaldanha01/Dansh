@@ -17,7 +17,9 @@ section{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #fff;
+    /*background: #fff;*/
+    background: #fff url(../img/DANSHfundo.png) no-repeat center top;
+    background-size: cover;
 }
 
 header {
@@ -153,6 +155,7 @@ footer .boxs:nth-child(4){
     display: flex;
     justify-content: space-between;
     align-items: center;
+   
 }
 
 .content .textBox {
@@ -268,7 +271,8 @@ footer .boxs:nth-child(4){
         display: flex;
         justify-content: space-between;
         align-items: center;
-        background: #fff;
+        background: #fff url(../img/DANSHfundo.png) no-repeat center top;
+    background-size: cover;
     }
     
 
@@ -351,7 +355,7 @@ footer .boxs:nth-child(4){
 
         section{
             
-            min-height: 80vh;
+            min-height: 100vh;
             padding: 18px 32px 32px 32px;
            
 
@@ -397,6 +401,7 @@ footer .boxs:nth-child(4){
       #nav.active #hamburger::after {
         transform: rotate(-135deg);
         top: -7px;
+        
       }
         
         
