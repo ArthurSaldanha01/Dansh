@@ -1,38 +1,46 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dansh</title>
-
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 </head>
+
 <body>
-    
+
     <section>
-        <div class="circle"></div>
-        <header>
-            <a href="#"><img src="img/Dansh (1).png" class="logo"></a>
-            <ul>
-                <li><a href="#">Início</a></li>
-                <li><a href="#">Serviços</a></li>
-                <li><a href="#">Contato</a></li>
-                <li><a href="#">Sobre</a></li>
-            </ul>
+
+        <header id="header">
+            <a id="logo" href=""><img src="img/Dansh (1).png" class="logo"></a>
+            <nav id="nav">
+                <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu"
+                    aria-expanded="false">
+                    <span id="hamburger"></span>
+                </button>
+                <ul id="menu" role="menu">
+                    <li><a href="/">Inicio</a></li>
+                    <li><a href="/">Serviços</a></li>
+                    <li><a href="/">Sobre</a></li>
+                    <li><a href="/">Contato</a></li>
+                </ul>
+            </nav>
         </header>
+        <script src="js.js"></script>
         <div class="content">
             <div class="textBox">
                 <h2><span>Dansh</span></h2>
                 <p></p>
-                
+
             </div>
             <!--<div class="imgBox">
                 <img src="images/img1.png" class="starbucks">
             </div>-->
         </div>
-        
+
         <ul class="sci">
             <li><a href="#"><img src="img/icons8-facebook-novo-41.png"></a></li>
             <li><a href="#"><img src="img/icons8-instagram-41.png"></a></li>
@@ -67,8 +75,10 @@
         </div>
         <div class="boxs">
             <h2>Sobre nós</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quae expedita inventore dolor iste maxime, harum reiciendis. Aliquid impedit quibusdam numquam iusto, molestias, eos animi placeat odit eaque dolores distinctio illum minus aspernatur eligendi asperiores!</p>
-            
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quae expedita inventore dolor iste
+                maxime, harum reiciendis. Aliquid impedit quibusdam numquam iusto, molestias, eos animi placeat odit
+                eaque dolores distinctio illum minus aspernatur eligendi asperiores!</p>
+
         </div>
     </footer>
     <div class="footer">
@@ -87,4 +97,5 @@
     </div>
 
 </body>
+
 </html>

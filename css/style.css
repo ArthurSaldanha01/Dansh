@@ -45,6 +45,7 @@ header ul li {
     list-style: none;
 }
 
+
 header ul li a {
     display: inline-block;
     color: #333;
@@ -236,9 +237,13 @@ footer .boxs:nth-child(4){
    
 }
 
+#btn-mobile{
+    display: none;
+}
 
 @media screen and (max-width: 950px) {
     body .content .textBox h2 span {
+        font-size: 15vw;
         color: #154081;
         text-align: center;
         
@@ -248,7 +253,7 @@ footer .boxs:nth-child(4){
         position: relative;
         width: 100%;
         min-height: 100vh;
-        padding: 100px;
+        padding: 32px 32px 32px 32px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -280,6 +285,116 @@ footer .boxs:nth-child(4){
 
 
 }
+
+@media(max-width:768px) {
+    #btn-mobile{
+        display: block ;
+    
+
+    }
+    .textBox{
+      font-size: 0.5em;
+      text-align:left;
+      position:relative;
+       
+     
+    }
+    header {
+        
+        padding: 20px 32px;
+    
+    }
+
+    
+
+    #menu{
+        display: none;
+        /*display: block;*/ 
+        position: absolute;
+        width:100%;
+        top:90px;
+        right:0px;
+        height:calc(100vh-930px);
+        z-index:1000;
+        background-color:white ;
+        text-align: center;
+        
+
+
+    }
+
+    #menu>li:hover{
+        background-color: silver;
+    }
+    
+    #nav.active #menu{
+        display: block;
+    }
+    #menu a {
+        padding: 1rem 0;
+        margin:0 1rem;
+        border-bottom: 2 px solid rgba(0, 0, 0, .05);
+    }
+
+    @media(max-width:450px) {
+
+        section{
+            
+            min-height: 80vh;
+            padding: 18px 32px 32px 32px;
+           
+
+        }
+        .textBox{
+            
+            text-align:left;
+            position:relative;
+            
+        }
+
+    }    
+    #btn-mobile {
+        display: flex;
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: 0.5rem;
+      }
+      #hamburger {
+        border-top: 2px solid;
+        width: 20px;
+      }
+      #hamburger::after,
+      #hamburger::before {
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: currentColor;
+        margin-top: 5px;
+        transition: 0.3s;
+        position: relative;
+      }
+      #nav.active #hamburger {
+        border-top-color: transparent;
+      }
+      #nav.active #hamburger::before {
+        transform: rotate(135deg);
+      }
+      #nav.active #hamburger::after {
+        transform: rotate(-135deg);
+        top: -7px;
+      }
+        
+        
+
+    
+
+}
+
+
 
 
 
